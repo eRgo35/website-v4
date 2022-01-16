@@ -1,0 +1,46 @@
+.Navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  background-color: #181818;
+  padding: 10px;
+}
+
+.menuLink {
+  text-decoration: none;
+  margin: 0 5px;
+  color: #c4c4c4;
+  transition: 0.1s color ease-in-out;
+}
+
+.menuLink:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.1s color ease-in-out;
+}
+
+.wordart {
+  height: 3.2vh;
+}
+
+.menuButton {
+  border: none;
+  color: #c4c4c4;
+  background-color: transparent;
+  transition: 0.1s color ease-in-out;
+  font-size: 2.1vh;
+  margin: 0 10px;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  color: white;
+  transition: 0.1s color ease-in-out;
+}
+
+.contact {
+  border: 2px solid rgb(5,103,223);
+  border: 2px solid linear-gradient(180deg, rgba(5,103,223,1) 0%, rgba(30,146,255,1) 50%, rgba(5,103,223,1) 100%);
+  border-radius: 5px;
+}
