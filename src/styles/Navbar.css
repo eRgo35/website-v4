@@ -12,6 +12,7 @@
   margin: 0 5px;
   color: #c4c4c4;
   transition: 0.1s color ease-in-out;
+  /* outline: 1px solid red; */
 }
 
 .menuLink:hover {
@@ -43,4 +44,24 @@
   border: 2px solid rgb(5,103,223);
   border: 2px solid linear-gradient(180deg, rgba(5,103,223,1) 0%, rgba(30,146,255,1) 50%, rgba(5,103,223,1) 100%);
   border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.contact:hover {
+  background-color: #0000002a;
+}
+
+.contact * {
+  margin: 0 2px;
+}
+
+.icon {
+  top: .25em;
+  position: relative;
+}
+
+.socials {
+  top: .4em;
+  width: 1.25em !important;
+  height: 1.25em !important;
 }

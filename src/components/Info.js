@@ -2,7 +2,7 @@ import '../styles/Info.css';
 
 const Info = () => {
   return (
-    <div className="Hello">
+    <div className="Info">
       <p>Info...</p>
     </div>
   );
