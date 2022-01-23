@@ -1,9 +1,9 @@
 import YouTubeIcon from '@material-ui/icons/YouTube';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import GitHubIcon from '@material-ui/icons/GitHub';
 import TelegramIcon from '@material-ui/icons/Telegram';
 import EmailIcon from '@material-ui/icons/Email';
+
 import '../styles/Navbar.css';
 
 const Navbar = () => {
