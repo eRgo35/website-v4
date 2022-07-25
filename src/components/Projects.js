@@ -1,8 +1,9 @@
+import { useRef } from 'react';
 import '../styles/Projects.css';
 
 const Projects = () => {
   return (
-    <div data-aos="fade-up" data-aos-delay="300" data-aos-duration="1500" className="Projects">
+    <div className="Projects" id="projects">
       <p>Projects...</p>
     </div>
   );

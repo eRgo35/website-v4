@@ -2,9 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 48px;
-  background-color: #181818;
-  padding: 10px;
+  text-align: center;
+  height: 64px;
+  padding: 0 15px;
+  background-color: #00000000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  transition: 0.2s all ease-in-out;
+}
+
+.hello, .sections, .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menuLink {
@@ -12,7 +25,11 @@
   margin: 0 5px;
   color: #c4c4c4;
   transition: 0.1s color ease-in-out;
-  /* outline: 1px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
 }
 
 .menuLink:hover {
@@ -22,7 +39,7 @@
 }
 
 .wordart {
-  height: 3.2vh;
+  height: 2.3vh;
 }
 
 .menuButton {
@@ -30,8 +47,13 @@
   color: #c4c4c4;
   background-color: transparent;
   transition: 0.1s color ease-in-out;
-  font-size: 2.1vh;
+  font-size: 1.4vh;
   margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  text-decoration: none;
 }
 
 .menuButton:hover {
@@ -43,8 +65,19 @@
 .contact {
   border: 2px solid rgb(5,103,223);
   border: 2px solid linear-gradient(180deg, rgba(5,103,223,1) 0%, rgba(30,146,255,1) 50%, rgba(5,103,223,1) 100%);
+  font-weight: 600;
   border-radius: 5px;
   padding: 5px 10px;
+}
+
+.contact span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.active {
+  color: white;
 }
 
 .contact:hover {
@@ -55,13 +88,7 @@
   margin: 0 2px;
 }
 
-.icon {
-  top: .25em;
-  position: relative;
-}
-
 .socials {
-  top: .4em;
   width: 1.25em !important;
   height: 1.25em !important;
 }

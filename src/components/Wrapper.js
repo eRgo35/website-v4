@@ -8,13 +8,14 @@ import Hobbies from './Hobbies';
 import Footer from './Footer';
 
 import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import 'aos/dist/aos.css';
 
 const Wrapper = () => {
   useEffect(() => {
     AOS.init();
     AOS.refresh();
   })
+
   return (
     <div className="Wrapper">
       <Navbar />

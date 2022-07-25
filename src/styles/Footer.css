@@ -11,12 +11,12 @@
   justify-content: center;
 }
 
-.email a {
+.email {
   color: #c4c4c4;
   text-decoration: none;
 }
 
-.email a:hover {
+.email:hover {
   text-decoration: underline;
   color: white;
 }
