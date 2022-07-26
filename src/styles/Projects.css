@@ -1,3 +1,26 @@
-.Projects {
-  height: 100vh;
+.projects-content {
+  margin: 0 20vh;
+  padding-top: 10vh;
+}
+
+.projects-content > * {
+  font-size: 3vh;
+  font-weight: 600;
+}
+
+.projects-card-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.projects-card {
+  width: 40vh;
+  height: 25vh;
+  margin: 3vh;
+}
+
+* {
+  outline: 1px solid red;
 }

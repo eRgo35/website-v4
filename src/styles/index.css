@@ -16,7 +16,7 @@ code {
 }
 
 body::-webkit-scrollbar {
-  width: 0.3em;
+  width: 0.3vh;
 }
 
 body::-webkit-scrollbar-track {
@@ -25,7 +25,12 @@ body::-webkit-scrollbar-track {
 
 body::-webkit-scrollbar-thumb {
   background-color: #494949;
-  border-radius: 10px;
+  border-radius: 1vh;
+}
+
+body::-webkit-scrollbar-thumb:active {
+  background-color: #3a3a3a;
+  border-radius: 1vh;
 }
 
 ::selection {

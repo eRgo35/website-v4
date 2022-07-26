@@ -1,6 +1,6 @@
-.Hello {
-  margin-top: 64px;
-  height: calc(100vh - 64px);
+.hello {
+  margin-top: 5vh;
+  height: calc(100vh - 5vh);
 }
 
 .hello-bg {
@@ -13,4 +13,46 @@
   right: 0;
   bottom: 0;
   z-index: -1;
+}
+
+.hello-content {
+  position: absolute;
+  top: 40vh;
+  left: 20vh;
+  right: 80vh;
+  width: 50vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hello-content > div {
+  margin: 1vh 1.5vh;
+}
+
+.hello-greeting {
+  font-size: 4vh;
+}
+
+.hello-bio {
+  font-size: 2vh;
+  text-align: justify;
+}
+
+.hello-scroll-down {
+  position: absolute;
+  bottom: 3vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hello-expander {
+  width: 3vh !important;
+  height: 3vh !important;
+}
+
+.hello-expander:hover {
+  cursor: pointer;
 }

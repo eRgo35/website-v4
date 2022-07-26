@@ -1,28 +1,28 @@
-.Navbar {
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  height: 64px;
-  padding: 0 15px;
+  height: 5vh;
+  padding: 0 1vh;
   background-color: #00000000;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
-  transition: 0.2s all ease-in-out;
+  transition: 0.2s color ease-in-out;
 }
 
-.hello, .sections, .social {
+.navbar-hello, .navbar-sections, .navbar-social {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.menuLink {
+.navbar-menuLink {
   text-decoration: none;
-  margin: 0 5px;
+  margin: 0 0.4vh;
   color: #c4c4c4;
   transition: 0.1s color ease-in-out;
   display: flex;
@@ -32,23 +32,23 @@
   height: fit-content;
 }
 
-.menuLink:hover {
+.navbar-menuLink:hover {
   cursor: pointer;
   color: white;
   transition: 0.1s color ease-in-out;
 }
 
-.wordart {
+.navbar-wordart {
   height: 2.3vh;
 }
 
-.menuButton {
+.navbar-menuButton {
   border: none;
   color: #c4c4c4;
   background-color: transparent;
   transition: 0.1s color ease-in-out;
   font-size: 1.4vh;
-  margin: 0 10px;
+  margin: 0 1vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -56,39 +56,42 @@
   text-decoration: none;
 }
 
-.menuButton:hover {
+.navbar-menuButton:hover {
   cursor: pointer;
   color: white;
   transition: 0.1s color ease-in-out;
 }
 
-.contact {
-  border: 2px solid rgb(5,103,223);
-  border: 2px solid linear-gradient(180deg, rgba(5,103,223,1) 0%, rgba(30,146,255,1) 50%, rgba(5,103,223,1) 100%);
+.navbar-contact {
+  border: 0.2vh solid rgb(5,103,223);
+  border: 0.2vh solid linear-gradient(180deg, rgba(5,103,223,1) 0%, rgba(30,146,255,1) 50%, rgba(5,103,223,1) 100%);
   font-weight: 600;
-  border-radius: 5px;
-  padding: 5px 10px;
+  border-radius: 0.5vh;
+  padding: 0.5vh 1vh;
+  width: 7vh;
+  height: 1.6vh;
+  font-size: 1.3vh;
 }
 
-.contact span {
+.navbar-contact span {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.active {
+.navbar-active {
   color: white;
 }
 
-.contact:hover {
+.navbar-contact:hover {
   background-color: #0000002a;
 }
 
-.contact * {
-  margin: 0 2px;
+.navbar-contact * {
+  margin: 0 0.15vh;
 }
 
-.socials {
-  width: 1.25em !important;
-  height: 1.25em !important;
+.navbar-socials {
+  width: 2.2vh !important;
+  height: 2.2vh !important;
 }
