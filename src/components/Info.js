@@ -1,19 +1,95 @@
-// import { Suspense } from 'react';
+import { Canvas, extend, useFrame, useThree } from '@react-three/fiber';
+import { Suspense, useRef } from 'react';
 import '../styles/Info.css';
+import Model from './Model';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+
+extend({ OrbitControls });
+
+const CameraControls = () => {
+  const {
+    camera,
+    gl: { domElement }
+  } = useThree();
+  const controls = useRef();
+  useFrame((state) => controls.current.update());
+  return (<orbitControls
+    ref={controls}
+    enableZoom={true}
+    // maxAzimuthAngle={Math.PI / 2}
+    maxPolarAngle={Math.PI / 2}
+    // minAzimuthAngle={-Math.PI / 2}
+    minPolarAngle={0}
+    args={[camera, domElement]}
+  />
+  );
+}
 
 const Info = () => {
   return (
     <div id="info">
       <div className='info-content'>
         <div className='info-skyline'>
-          {/* <Canvas camera={{ position: [0, 10, 100] }}>
+          <span className='info-title'>My 2021 GitHub Skyline</span>
+          <Canvas camera={{ position: [0, 10, 100] }}>
+            <CameraControls />
             <Suspense fallback={null}>
-              <Model url={"./eRgo35-2022.stl"} />
+              <Model url={"eRgo35-2021.stl"} />
             </Suspense>
-          </Canvas> */}
+          </Canvas>
         </div>
         <div className='info-technologies'>
-
+          <span className='info-title'>Stuff I'm familliar with</span>
+          <div className='info-technologies-icons'>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="JavaScript" src="logos/js.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="NodeJS" src="logos/nodejs.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="React" src="logos/react.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Angular" src="logos/angular.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="TypeScript" src="logos/typescript.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="SaSS" src="logos/sass.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Git" src="logos/git.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Firebase" src="logos/firebase.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Cloudflare" src="logos/cloudflare.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Python" src="logos/python.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="C#" src="logos/csharp.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Linux" src="logos/linux.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Docker" src="logos/docker.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Ethereum" src="logos/ethereum.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Solidity" src="logos/solidity.svg" />
+            </div>
+            <div className='info-technologies-icon'>
+              <img className="info-technologies-svg" alt="Metasploit" src="logos/metasploit.svg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>

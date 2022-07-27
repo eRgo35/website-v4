@@ -56,3 +56,18 @@
 .hello-expander:hover {
   cursor: pointer;
 }
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+  .hello {
+    margin-top: 80px;
+    height: calc(100vh - 80px);
+  }
+
+  .hello-content {
+    box-sizing: border-box;
+    position: static;
+    margin: 0;
+    padding: 5vh 3vh 3vh;
+    width: 100%;
+  }
+}

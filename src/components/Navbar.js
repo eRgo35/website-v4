@@ -1,9 +1,9 @@
-// import YouTubeIcon from '@material-ui/icons/YouTube';
-import TwitterIcon from '@material-ui/icons/Twitter';
-// import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
-import TelegramIcon from '@material-ui/icons/Telegram';
-import EmailIcon from '@material-ui/icons/Email';
+// import YouTubeIcon from '@mui/icons-material/YouTube';
+import TwitterIcon from '@mui/icons-material/Twitter';
+// import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import TelegramIcon from '@mui/icons-material/Telegram';
+import EmailIcon from '@mui/icons-material/Email';
 
 import '../styles/Navbar.css';
 import { Link } from 'react-scroll';

@@ -1,4 +1,4 @@
-import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
+import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Link } from 'react-scroll';
 import '../styles/Hello.css';
 
