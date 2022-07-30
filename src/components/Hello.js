@@ -13,15 +13,15 @@ const Hello = () => {
           </div>
           <div className='hello-bio'>
             <span className='hello-bio-span' data-aos="fade-up" data-aos-duration="1500" data-aos-delay="800">
-              I'm a developer and high school student creating websites using Angular and React framework and software using C# and Python.
+              I'm a developer and student developing websites using Angular and React frameworks and software in C# and Python.
             </span>
             <br /><br />
             <span className='hello-bio-span' data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000">
-              I built a basic web app using Angular Material framework, simple Server Manager program for Windows and simple Guess the Number game using Python.
+              I built a simple web app in Angular, Server Manager program for Windows and useful Chrome Extensions.
             </span>
             <br /><br />
             <span className='hello-bio-span' data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1200">
-              I'm open to new technologies such as Blockchain and Ethereum Smart Contracts.
+              I'm open to new technologies like blockchain and Ethereum Smart Contracts.
             </span>
           </div>
         </div>

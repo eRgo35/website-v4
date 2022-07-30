@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import '../styles/Projects.css';
 
 const Projects = () => {
 
-  const [projects, setProjects] = useState([]);
+  // const [projects, setProjects] = useState([]);
 
   // useEffect(async () => {
   //   const response = await fetch("https://api.github.com/users/eRgo35/repos");
