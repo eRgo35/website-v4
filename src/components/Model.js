@@ -13,7 +13,7 @@ const Model = ({ url }) => {
         <meshNormalMaterial wireframe={true} />
       </mesh> */}
       <mesh position={[0, -50, 0]}>
-        <gridHelper args={[20000, 200, 0xff00ff, 0xff00ff]} />
+        <gridHelper args={[20000, 200, 0x0567df, 0x0567df]} />
       </mesh>
       <mesh ref={ref} scale={[2.2, 2.2, 2.2]} position={[0, -30, 0]} rotation={[-Math.PI / 2, 0, 0]} receiveShadow={true} castShadow={true}>
         <meshPhongMaterial color={0xaabbaa} specular={0x111111} shininess={400} />

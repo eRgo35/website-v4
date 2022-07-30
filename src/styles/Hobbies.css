@@ -24,6 +24,31 @@
   border-radius: 0.5vh;
 }
 
+.hobbies-img {
+  width: 100%;
+  height: 80%;
+}
+
+.hobbies-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hobbies-header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  height: 20%;
+  padding-left: 2vh;
+}
+
+.hobbies-header a {
+  text-decoration: none;
+  color: #0567df;
+  font-size: 2vh;
+}
+
 @media only screen and (min-width: 320px) and (max-width: 479px) {
   .hobbies-content {
     margin: 0;

@@ -25,7 +25,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar" ref={navbar}>
+    <div className="navbar" ref={navbar} >
       <div className="navbar-hello">
         <button className='navbar-menuButton' onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}>
           <img className="navbar-wordart" src="/Wordmark.png" alt="Michael Czyż" />
